@@ -1,0 +1,177 @@
+.parent-filter {
+    position: relative;
+    z-index: 10;
+    top: 25px;
+}
+/** filters list **/
+#filter-list {
+    display: block;
+    width: 35%;
+    margin-bottom: 50px;
+    text-align: -moz-right;
+    text-align: -webkit-right;
+    text-align: right;
+    position: relative;
+    margin-right: 3%;
+}
+
+    #filter-list:before {
+        content: '';
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        left: 0;
+        background: rgba(216,216,216,1);
+        background: -moz-linear-gradient(left, rgba(216,216,216,1) 0%, rgba(194,194,194,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(216,216,216,1)), color-stop(100%, rgba(194,194,194,1)));
+        background: -webkit-linear-gradient(left, rgba(216,216,216,1) 0%, rgba(194,194,194,1) 100%);
+        background: -o-linear-gradient(left, rgba(216,216,216,1) 0%, rgba(194,194,194,1) 100%);
+        background: -ms-linear-gradient(left, rgba(216,216,216,1) 0%, rgba(194,194,194,1) 100%);
+        background: linear-gradient(to right, rgba(216,216,216,1) 0%, rgba(194,194,194,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#c2c2c2', GradientType=1 );
+        z-index: -1;
+    }
+
+    #filter-list:after {
+        content: '';
+        height: 22px;
+        width: 73px;
+        position: absolute;
+        background: url(../../img/filter.png) no-repeat;
+        left: -73px;
+        bottom: -20px;
+    }
+
+    #filter-list li {
+        display: inline-block;
+        width: auto;
+        margin: 0px 5px;
+        padding: 0 5px;
+        font-size: 9pt;
+        cursor: pointer;
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+        color: #666;
+    }
+
+        #filter-list li:first-child {
+            margin: 0px 0 0 5px;
+        }
+
+        #filter-list li:hover, #filter-list li.active {
+            border-bottom: 2px solid #6ba8fd;
+            -webkit-transition: all 0.35s ease-in-out;
+            -moz-transition: all 0.35s ease-in-out;
+            transition: all 0.35s ease-in-out;
+            color: #6ba8fd;
+        }
+
+
+/** portfolio list **/
+#portfolio {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 33px;
+}
+
+    #portfolio .item {
+        display: none;
+        opacity: 0;
+        vertical-align: top;
+        -moz-box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        width: 20%;
+        float: right;
+        margin: 0;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+        #portfolio .item a {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            background: #fff;
+        }
+
+        #portfolio .item img {
+            width: 100%;
+        }
+
+.portfolio-text {
+    display: block;
+    color: #fff;
+    background: #497bb8;
+    height: 45px;
+    text-align: -webkit-right;
+    text-align: -moz-right;
+    text-align: right;
+    width: 100%;
+    margin: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    padding: 6px 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+}
+
+    .portfolio-text .btn {
+        width: 121px;
+        opacity: 1;
+        visibility: visible;
+        float: left;
+        position: absolute;
+        left: 0;
+        top: 6px;
+    }
+
+    .portfolio-text strong {
+        width: 70%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline-block;
+        font-size: 12.5pt;
+    }
+
+.bgBlack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#portfolio .item:hover {
+    -webkit-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.4);
+}
+
+    #portfolio .item:hover .portfolio-text {
+        bottom: 0;
+    }
+
+    #portfolio .item:hover .bgBlack {
+        opacity: 1;
+    }
