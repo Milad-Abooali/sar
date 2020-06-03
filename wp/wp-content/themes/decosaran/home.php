@@ -10,18 +10,18 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-  <title>کاریــزمیـشــا</title>
+  <title><?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?= F_ICO ?>/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?= F_ICO ?>/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?= F_ICO ?>/favicon-16x16.png">
+  <link rel="manifest" href="<?= F_ICO ?>/site.webmanifest">
 	<?php wp_head(); ?>
-
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-
-</body>
-</html>
 
 <section class="slideshow_contant">
     <div class="owl-carousel owl-theme slideshow" style="opacity: 1; display: block;">
@@ -126,15 +126,15 @@
                 </div>
             </div>
             <!-- logo -->
-            <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="pull-right logo"><img src="./کاریــزمیـشــا_files/logo.png" alt="" title=""></a>
+            <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="pull-right logo"><img src="<?= F_IMG ?>/logo.png" alt="" title=""></a>
             <!-- lang -->
             <div class="pull-right lang">
                 <a href="http://karizmisha.4080.ir/themes/tarameshlo/index-ltr.html" class="pull-right">
-                    <img src="./کاریــزمیـشــا_files/en.jpg" alt="" title="">
+                    <img src="<?= F_IMG ?>/en.jpg" alt="" title="">
                 </a>
                 <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="pull-right">
                     <span>فارسی</span>
-                    <img src="./کاریــزمیـشــا_files/fa.jpg" alt="" title="">
+                    <img src="<?= F_IMG ?>/fa.jpg" alt="" title="">
                 </a>
             </div>
         </div>
@@ -149,7 +149,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 animateblock lazy-load-box">
-                    <img src="./کاریــزمیـشــا_files/logo1.jpg" alt="" title="">
+                    <img src="<?= F_IMG ?>/logo1.jpg" alt="" title="">
                 </div>
                 <div class="col-sm-9 animateblock lazy-load-box">
                     <p>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا مرحله طراحی و صفحه‌بندی را به پایان برند.  . از آنجایی که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا مرحله طراحی و صفحه‌بندی را به پایان برند.  </p>
@@ -238,8 +238,8 @@
             </ul>
             <ul id="portfolio" class="gallery-lightbox">
                 <li class="item categori1 categori2 animateblock lazy-load-box mix_all" style="display: inline-block;  opacity: 1;">
-                    <a href="./کاریــزمیـشــا_files/gallery1.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
-                        <img src="./کاریــزمیـشــا_files/gallery1.jpg" alt=" " title="">
+                    <a href="<?= F_IMG ?>/gallery1.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
+                        <img src="<?= F_IMG ?>/gallery1.jpg" alt=" " title="">
                         <span class="bgBlack"></span>
                         <div class="portfolio-text">
                             <strong>مجتمع تجاری سیتی سنتر</strong>
@@ -248,8 +248,8 @@
                     </a>
                 </li>
                 <li class="item categori1 categori2 animateblock lazy-load-box mix_all" style="display: inline-block;  opacity: 1;">
-                    <a href="./کاریــزمیـشــا_files/gallery2.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
-                        <img src="./کاریــزمیـشــا_files/gallery2.jpg" alt=" " title="">
+                    <a href="<?= F_IMG ?>/gallery2.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
+                        <img src="<?= F_IMG ?>/gallery2.jpg" alt=" " title="">
                         <span class="bgBlack"></span>
                         <div class="portfolio-text">
                             <strong>مجتمع تجاری سیتی سنتر</strong>
@@ -258,8 +258,8 @@
                     </a>
                 </li>
                 <li class="item categori1  animateblock lazy-load-box mix_all" style="display: inline-block;  opacity: 1;">
-                    <a href="./کاریــزمیـشــا_files/gallery3.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
-                        <img src="./کاریــزمیـشــا_files/gallery3.jpg" alt=" " title="">
+                    <a href="<?= F_IMG ?>/gallery3.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
+                        <img src="<?= F_IMG ?>/gallery3.jpg" alt=" " title="">
                         <span class="bgBlack"></span>
                         <div class="portfolio-text">
                             <strong>مجتمع تجاری سیتی سنتر</strong>
@@ -268,8 +268,8 @@
                     </a>
                 </li>
                 <li class="item categori1 categori2 animateblock lazy-load-box mix_all" style="display: inline-block;  opacity: 1;">
-                    <a href="./کاریــزمیـشــا_files/gallery4.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
-                        <img src="./کاریــزمیـشــا_files/gallery4.jpg" alt=" " title="">
+                    <a href="<?= F_IMG ?>/gallery4.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
+                        <img src="<?= F_IMG ?>/gallery4.jpg" alt=" " title="">
                         <span class="bgBlack"></span>
                         <div class="portfolio-text">
                             <strong>مجتمع تجاری سیتی سنتر</strong>
@@ -278,8 +278,8 @@
                     </a>
                 </li>
                 <li class="item categori4 categori2 animateblock lazy-load-box mix_all" style="display: inline-block;  opacity: 1;">
-                    <a href="./کاریــزمیـشــا_files/gallery10.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
-                        <img src="./کاریــزمیـشــا_files/gallery10.jpg" alt=" " title="">
+                    <a href="<?= F_IMG ?>/gallery10.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
+                        <img src="<?= F_IMG ?>/gallery10.jpg" alt=" " title="">
                         <span class="bgBlack"></span>
                         <div class="portfolio-text">
                             <strong>مجتمع تجاری سیتی سنتر</strong>
@@ -288,8 +288,8 @@
                     </a>
                 </li>
                 <li class="item categori1 categori3  animateblock lazy-load-box mix_all" style="display: inline-block;  opacity: 1;">
-                    <a href="./کاریــزمیـشــا_files/gallery5.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
-                        <img src="./کاریــزمیـشــا_files/gallery5.jpg" alt=" " title="">
+                    <a href="<?= F_IMG ?>/gallery5.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
+                        <img src="<?= F_IMG ?>/gallery5.jpg" alt=" " title="">
                         <span class="bgBlack"></span>
                         <div class="portfolio-text">
                             <strong>مجتمع تجاری سیتی سنتر</strong>
@@ -298,8 +298,8 @@
                     </a>
                 </li>
                 <li class="item categori1 categori4  animateblock lazy-load-box mix_all" style="display: inline-block;  opacity: 1;">
-                    <a href="./کاریــزمیـشــا_files/gallery6.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
-                        <img src="./کاریــزمیـشــا_files/gallery6.jpg" alt=" " title="">
+                    <a href="<?= F_IMG ?>/gallery6.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
+                        <img src="<?= F_IMG ?>/gallery6.jpg" alt=" " title="">
                         <span class="bgBlack"></span>
                         <div class="portfolio-text">
                             <strong>مجتمع تجاری سیتی سنتر</strong>
@@ -308,8 +308,8 @@
                     </a>
                 </li>
                 <li class="item categori1 categori3  animateblock lazy-load-box mix_all" style="display: inline-block;  opacity: 1;">
-                    <a href="./کاریــزمیـشــا_files/gallery7.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
-                        <img src="./کاریــزمیـشــا_files/gallery7.jpg" alt=" " title="">
+                    <a href="<?= F_IMG ?>/gallery7.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
+                        <img src="<?= F_IMG ?>/gallery7.jpg" alt=" " title="">
                         <span class="bgBlack"></span>
                         <div class="portfolio-text">
                             <strong>مجتمع تجاری سیتی سنتر</strong>
@@ -318,8 +318,8 @@
                     </a>
                 </li>
                 <li class="item categori1 categori3  categori2 animateblock lazy-load-box mix_all" style="display: inline-block;  opacity: 1;">
-                    <a href="./کاریــزمیـشــا_files/gallery8.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
-                        <img src="./کاریــزمیـشــا_files/gallery8.jpg" alt=" " title="">
+                    <a href="<?= F_IMG ?>/gallery8.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
+                        <img src="<?= F_IMG ?>/gallery8.jpg" alt=" " title="">
                         <span class="bgBlack"></span>
                         <div class="portfolio-text">
                             <strong>مجتمع تجاری سیتی سنتر</strong>
@@ -328,8 +328,8 @@
                     </a>
                 </li>
                 <li class="item categori3  categori2 animateblock lazy-load-box mix_all" style="display: inline-block;  opacity: 1;">
-                    <a href="./کاریــزمیـشــا_files/gallery9.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
-                        <img src="./کاریــزمیـشــا_files/gallery9.jpg" alt=" " title="">
+                    <a href="<?= F_IMG ?>/gallery9.jpg" id="example2" class="showcase" data-rel="lightcase:myCollection:slideshow" title="Project">
+                        <img src="<?= F_IMG ?>/gallery9.jpg" alt=" " title="">
                         <span class="bgBlack"></span>
                         <div class="portfolio-text">
                             <strong>مجتمع تجاری سیتی سنتر</strong>
@@ -345,10 +345,10 @@
     <div class="part3">
         <div class="container">
             <div class="logos">
-                <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="leftload animateblock"><img src="./کاریــزمیـشــا_files/logo1.png" alt="" title=""></a>
-                <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="leftload animateblock"><img src="./کاریــزمیـشــا_files/logo2.png" alt="" title=""></a>
-                <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="leftload animateblock"><img src="./کاریــزمیـشــا_files/logo3.png" alt="" title=""></a>
-                <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="leftload animateblock"><img src="./کاریــزمیـشــا_files/logo4.png" alt="" title=""></a>
+                <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="leftload animateblock"><img src="<?= F_IMG ?>/logo1.png" alt="" title=""></a>
+                <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="leftload animateblock"><img src="<?= F_IMG ?>/logo2.png" alt="" title=""></a>
+                <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="leftload animateblock"><img src="<?= F_IMG ?>/logo3.png" alt="" title=""></a>
+                <a href="http://karizmisha.4080.ir/themes/tarameshlo/index.html" class="leftload animateblock"><img src="<?= F_IMG ?>/logo4.png" alt="" title=""></a>
             </div>
         </div>
     </div>
@@ -374,7 +374,7 @@
                                         <p data-limitedtext="265">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>
                                     </div>
                                     <div class="col-sm-4">
-                                        <img src="./کاریــزمیـشــا_files/news1.jpg" alt="" title="">
+                                        <img src="<?= F_IMG ?>/news1.jpg" alt="" title="">
                                     </div>
                                 </div>
                                 <div class="newsItemBtm">
@@ -392,7 +392,7 @@
                                         <p data-limitedtext="265">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>
                                     </div>
                                     <div class="col-sm-4">
-                                        <img src="./کاریــزمیـشــا_files/news2.jpg" alt="" title="">
+                                        <img src="<?= F_IMG ?>/news2.jpg" alt="" title="">
                                     </div>
                                 </div>
                                 <div class="newsItemBtm">
@@ -417,7 +417,7 @@
                                 </div>
                                 <div class="newsItemCenter row">
                                     <div class="col-sm-4">
-                                        <img src="./کاریــزمیـشــا_files/news2.jpg" alt="" title="">
+                                        <img src="<?= F_IMG ?>/news2.jpg" alt="" title="">
                                     </div>
                                     <div class="col-sm-8">
                                         <p data-limitedtext="265">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>
@@ -435,7 +435,7 @@
                                 </div>
                                 <div class="newsItemCenter row">
                                     <div class="col-sm-4">
-                                        <img src="./کاریــزمیـشــا_files/news1.jpg" alt="" title="">
+                                        <img src="<?= F_IMG ?>/news1.jpg" alt="" title="">
                                     </div>
                                     <div class="col-sm-8">
                                         <p data-limitedtext="265">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>
@@ -482,7 +482,7 @@
             </div>
             <div class="itemH col-sm-4" style="height: 418px;">
                 <div class="dark">
-                    <img src="./کاریــزمیـشــا_files/logpfooter.png" alt="" title="">
+                    <img src="<?= F_IMG ?>/logpfooter.png" alt="" title="">
                     <div class="developed">
                         <a target="_blank" href="http://webone.co/" style="text-decoration: none">طراحی سایت </a>,
                         <a target="_blank" href="http://webone.co/" style="text-decoration: none">طراحی سایت فروشگاهی</a>
@@ -519,7 +519,7 @@
                             <span class="field-validation-valid">لطفا کد امنیتی را وارد کنید</span>
                         </div>
                         <i class="reload"></i>
-                        <img class="feedback-input" alt="" src="./کاریــزمیـشــا_files/captcha.png" title="">
+                        <img class="feedback-input" alt="" src="<?= F_IMG ?>/captcha.png" title="">
                     </div>
                     <input class="waitinginput" value="لطفاً منتظر بمانید..." type="button">
                     <button class="submit btn2 ripplelink">ارسال</button>
@@ -532,36 +532,5 @@
     </div>
 
 </footer>
-<!-- Material button -->
-<button class="material-scrolltop" type="button"></button>
-<!--================================ js ====================================-->
-<script type="text/javascript" src="./کاریــزمیـشــا_files/jquery-1.11.1.min.js.download"></script>
-<!-- bootstrap-->
-<script type="text/javascript" src="./کاریــزمیـشــا_files/bootstrap.js.download"></script>
-<!-- Carousel -->
-<script src="./کاریــزمیـشــا_files/owl.carousel.js.download"></script>
-<!-- custom -->
-<script type="text/javascript" src="./کاریــزمیـشــا_files/custom.js.download"></script>
-<!-- limit -->
-<script src="./کاریــزمیـشــا_files/limite.js.download"></script>
-<!-- filter -->
-<script src="./کاریــزمیـشــا_files/filter.js.download"></script>
-<!-- popup -->
-<script src="./کاریــزمیـشــا_files/lightcase.js.download"></script>
-<!-- back-to-top -->
-<script src="./کاریــزمیـشــا_files/scroll.js.download"></script>
-<!-- ripplink -->
-<script src="./کاریــزمیـشــا_files/ripplink.js.download"></script>
-<!-- material-->
-<script type="text/javascript" src="./کاریــزمیـشــا_files/form-material.js.download"></script>
-<!-- menu -->
-<script src="./کاریــزمیـشــا_files/bootstrap-dropdownhover.js.download"></script>
-<!-- autoheight -->
-<script type="text/javascript" src="./کاریــزمیـشــا_files/jquery.matchHeight.js.download"></script>
-<!-- smoothscroll -->
-<script src="./کاریــزمیـشــا_files/SmoothScroll.js.download"></script>
-<!-- animation -->
-<script src="./کاریــزمیـشــا_files/animate.js.download"></script>
 
-
-<div class="hiddendiv common"></div></body></html>
+<?php get_footer(); ?>
